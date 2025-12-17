@@ -1,0 +1,41 @@
+body{
+    align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #3f1117;
+}
+
+h1{
+text-align: left;
+justify-content: center;
+color :#090909
+
+}
+
+.accordion{
+  position: relative;
+  padding: 30px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+   --bs-accordion-active-color: #090909; 
+    --bs-accordion-active-bg: #acacac;
+    --bs-accordion-btn-focus-box-shadow: #353535; 
+}
+
+.accordion-button {
+    --bs-accordion-btn-icon-color: #3f1117}
+.accordion-butto-collapsed {
+    color: #090909;
+}
+
+.accordion-header {
+    background-color: #acacac;
+}
+
+.accordion .info {
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - Lumiere</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            background: linear-gradient(to bottom, #090909, #3f1117);
+            color: #e7e7e7;
+            padding: 60px 0;
+             font-family: "Playfair Display", serif;
+        }
+
+        .btn-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+        }
+
+        h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 52px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 50px auto;
+            color: #cfcfcf;
+            line-height: 1.7;
+        }
+
+        .accordion-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            margin-bottom: 18px;
+            backdrop-filter: blur(6px);
+        }
+
+        .accordion-button {
+            background: transparent;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+            border: none;
+        }
+
+        .accordion-body {
+            padding: 20px 28px;
+            font-size: 17px;
+            line-height: 1.7;
+            color: #d9d9d9;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        .container-faq {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas" id="close"></button>
+
+    <h1>Frequently Asked Questions</h1>
+    <p class="subtitle">
+        There must be a tremendous amount of questions crossing your mind, and the Lumiere team is delighted to guide you through every detail.
+    </p>
+
+    <div class="container-faq">
+        <div class="accordion" id="faqAccordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        Can I make a reservation in person?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <strong>Yes, you can.</strong> Visit our location and our receptionist will gladly assist you. However, we recommend making an online reservation for a smoother experience.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        What are your operating hours?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>We are open daily from 10:00 AM to 10:00 PM.</strong> Special arrangements may be accommodated upon request.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        Is there a dress code?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Yes.</strong> Guests are kindly requested to follow a smart-casual or formal dress code to maintain our ambiance.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        Do you offer private dining rooms?
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Certainly.</strong> We provide exclusive private dining spaces perfect for intimate dinners, gatherings, and meetings.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                        Do you serve wine or have a curated beverage selection?
+                    </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Yes, we do.</strong> Our selection includes refined wines and beverages curated to elevate your dining experience.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                        Do you offer tasting menus?
+                    </button>
+                </h2>
+                <div id="faq6" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Yes, we do.</strong> Our chef presents exquisite seasonal tasting menus showcasing the finest ingredients.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                        Do you accommodate special occasions?
+                    </button>
+                </h2>
+                <div id="faq7" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Certainly.</strong> Birthdays, anniversaries, corporate events—our team will gladly add personalized touches.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                        Will I receive a refund if I miss my reservation?
+                    </button>
+                </h2>
+                <div id="faq8" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Unfortunately, no.</strong> Completed reservations are non-refundable. Please ensure you arrive at your scheduled time.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
+                        Do you accept private event bookings?
+                    </button>
+                </h2>
+                <div id="faq9" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Yes, we do.</strong> The entire restaurant may be reserved exclusively for your event upon request.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("close").addEventListener("click", () => {
+            window.location.href = "Home.php"; 
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
